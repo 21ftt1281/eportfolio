@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 4</title>
+</head>
+<body>
+<form method="" action="">
+	
+	
+	<!-- <input type="text" name="postcode" placeholder="ZZ1234"pattern="[A-Za-z]{2}[0-9]{4}"><br>--><!-- doesnt accept number -->
+	<input type="text" name="postcode" placeholder="ZZ1234" pattern="[A-z]{2}\d{4}"><br>
+	<input type="text" name="anywords" placeholder="" pattern="[A-z0-9]{4,8}"><br><!-- , - infinite -->
+
+	<!-- \d accept 0-9 -->
+	<!-- . accept any symbol, number and letter except newline like enter -->
+	<input type="text" pattern="\w{4}"><br> <!-- accept letter and number symbol underscore -->
+	<input type="text" name="words" placeholder="" pattern=".{6}"><br>
+	<input type="text" name="ic" placeholder="" pattern="[01]{2}-[0-9]{6}\(Y|R|G)"><br>
+
+	<!-- 00-121212(Y)
+	01
+	10
+	11
+ 	-->
+
+	<!-- 2 3 4 5
+	5234466 -->
+ 	<input type="text" name="landline" placeholder="" pattern="[2-5][0-9]{6}"><br>
+ 	<!-- <input type="text" name="landline" placeholder="" pattern="(2|3|4|5)[0-9]{6}"><br> -->
+ 	
+ 	<!-- 2
+ 	1 2 3 - 9 eg. 21 22 23
+ 	FT or PT
+ 	B T E H P
+ 	1000
+
+ 	21FTT1260
+ 	21PTB1000
+ 	11FTH2020 -->
+ 	<input type="text" name="studentid" placeholder="" pattern="[2][1-9](FT|PT)(B|T|E|H|P)[0-9]{4}"><br>
+	<input type="submit" name="">
+</form>
+</body>
+</html>
